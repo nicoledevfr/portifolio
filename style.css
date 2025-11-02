@@ -7,9 +7,9 @@
     --fonte--primaria: "Poppins", sans-serif;
     --fonte--secundária: "Inter", sans-serif;
     --fonte--personalizada: "Silkscreen", sans-serif; 
-    --cor--background: #FFFCF9;
-    --cor--textos: black;
-    --cor--destaques:#4B3F72;
+    --cor--background: #EDE6DD;
+    --cor--textos: #333333;
+    --cor--destaques:#7C4DFF;
     --cor--hoverlinks: #6b4eff;
 
 }
@@ -22,12 +22,13 @@ header {
     font-family: var(--fonte--secundária);
     font-size: 20px;
     padding: 10px;
+   
 
 }
 a {
     margin: 40px;
     text-decoration: none;
-    color: black;
+    color: var(--cor--textos);
 }
 a:hover {
     color: var(--cor--hoverlinks);
@@ -47,6 +48,7 @@ h1, h2 {
     position: relative;
     bottom: 300px;
     right: 100px;
+    color: var(--cor--textos);
 }  
  h1 > strong {
     color: var(--cor--destaques);
@@ -66,14 +68,14 @@ h3{
     font-size: 40px;
     font-family: var(--fonte--primaria);
     text-align: center;
-    padding: 10px;
-
 }
 #sobremim > h3 {
     color: var(--cor--background);
 } 
 
+
 h5 {
+    color: var(--cor--textos);
     font-size: 50px;
     font-family: var(--fonte--secundária);
     font-weight: 400;
@@ -82,7 +84,7 @@ h5 {
 
 
 p {
-    color: var(--cor--background);
+   
     text-align: center;
     font-family: var(--fonte--secundária);
     font-weight: 200;
@@ -97,7 +99,7 @@ p {
     position: absolute;
 }
 #redessociais > a > img {
- margin: -35px;
+ 
  width: 30px;
  height: 30px;
  position: relative;
@@ -105,15 +107,34 @@ p {
  bottom: 45px;
 }
 #sobremim {
+    width: 580px;
+    height: 700px;
     background-color: var(--cor--destaques);
-    max-width: 700px;
-    height: 500px;
+    border-radius: 25px;
     margin: auto;
-    border-radius: 30px;
-    
+}
+#quemsou {
+    list-style-type: disc;      
+    list-style-position: inside; 
+    margin: 20px 40px;                    
+    color: var(--cor--background);   
+    font-family: var(--fonte--secundária);
+    font-size: 20px;
+    line-height: 1.6;
 }
 
+#quemsou li {
+    margin-bottom: 10px;      
+}
+
+#minhastecnologias > img {
+ position: relative;
+ left: 490px;
+ max-width: 60px;
+ margin: 20px;
+}
 footer {
+    color: var(--cor--textos);
     text-align: center;
     padding-bottom: 250px;
     padding-top: 200px;
